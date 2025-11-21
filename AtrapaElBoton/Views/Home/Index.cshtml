@@ -4,18 +4,26 @@
 
 <h1>Atrapa el Botón</h1>
 
-<div class="info">
+<div class="accessibility-controls" role="region" aria-label="Controles de accesibilidad">
+    <button class="button" id="toggle-contrast" aria-pressed="false" title="Modo alto contraste" tabindex="0">Contraste+</button>
+
+    <button class="button" id="font-decrease" title="Disminuir tamaño de fuente" tabindex="0">A-</button>
+    <button class="button" id="font-reset" title="Restablecer tamaño de fuente" tabindex="0">A</button>
+    <button class="button" id="font-increase" title="Aumentar tamaño de fuente" tabindex="0">A+</button>
+</div>
+
+<div class="info" aria-live="polite">
     <p id="time">Tiempo: </p>
     <p id="puntos">Puntos: </p>
 </div>
 
-<div class="container">
-    <button class="button" id="bandera" disabled>
+<div class="container" aria-label="Área del juego">
+    <button class="button" id="bandera" disabled aria-label="Botón objetivo">
         :)
     </button>
 </div>
 
-<button class="button" id="inicio">
+<button class="button" id="inicio" aria-label="Iniciar juego" tabindex="0">
     INICIAR
 </button>
 
