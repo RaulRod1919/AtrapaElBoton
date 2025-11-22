@@ -20,8 +20,9 @@ const Model = {
         }, 1000);
     },
     sumarPuntos: function () {
+        if ($("#bandera").is(":disabled")) return; // No sumar si está deshabilitado
         puntos++;
-        View.actualizarPuntos(puntos); // Muestra puntos ganados
+        View.actualizarPuntos(puntos);
     },
     reset: function () {
         // Reinicia el juego y no deja tocar la bandera
@@ -87,6 +88,8 @@ const Controller = {
     },
     terminarJuego: function () {
         // Reiniciar modelo y actualizar vista
+        alert("La cantidad de puntos obtenidos son: " + puntos);
+
         Model.reset();
         View.actualizarTiempo(0);
         View.actualizarPuntos(0);
