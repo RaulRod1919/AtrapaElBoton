@@ -80,3 +80,35 @@ h1{
 #bandera{
     position: absolute;
 }
+
+
+.accessibility-controls {
+    margin: 8px 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+body.high-contrast,
+body.high-contrast * {
+    background-color: #000 !important;
+    color: #ffd600 !important;
+    border-color: #ffd600 !important;
+}
+
+    body.high-contrast .button,
+    body.high-contrast button,
+    body.high-contrast input,
+    body.high-contrast .info,
+    body.high-contrast .container {
+        background-color: #000 !important;
+        color: #ffd600 !important;
+        border-color: #ffd600 !important;
+    }
+
+#toggle-contrast[aria-pressed="true"] {
+    box-shadow: 0 0 0 0.2rem #ffd600;
+    outline: none;
+}
