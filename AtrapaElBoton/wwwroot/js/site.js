@@ -165,6 +165,7 @@
         },
         terminarJuego: function () {
             // Reiniciar modelo y actualizar vista
+            alert("La cantidad de puntos obtenidos son: " + puntos);
             Model.reset();
             View.actualizarTiempo(0);
             View.actualizarPuntos(0);
