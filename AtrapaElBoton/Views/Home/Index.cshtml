@@ -12,6 +12,18 @@
     <button class="button" id="font-increase" title="Aumentar tamaño de fuente" tabindex="0">A+</button>
 </div>
 
+
+<!-- pokeAPI-->
+<div class="poke-controls" aria-label="Buscador de Pokémon" style="margin:12px 0;">
+    <input id="poke-query" type="text" placeholder="Nombre o id (ej. pikachu o 25)" aria-label="Nombre o id del Pokémon" />
+    <button class="button" id="poke-search">Buscar</button>
+    <button class="button" id="poke-random">Aleatorio</button>
+</div>
+
+
+<div id="poke-result" aria-live="polite" style="margin-top:12px;">
+</div>
+
 <div class="info" aria-live="polite">
     <p id="time">Tiempo: </p>
     <p id="puntos">Puntos: </p>
@@ -33,4 +45,7 @@
     <script src="~/js/Model.js"></script>
     <script src="~/js/View.js"></script>
     <script src="~/js/Controller.js"></script>
+
+    @* poke *@
+    <script src="~/js/poke.js"></script>
 }

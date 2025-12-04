@@ -112,3 +112,22 @@ body.high-contrast * {
     box-shadow: 0 0 0 0.2rem #ffd600;
     outline: none;
 }
+
+
+/*PokeAPI */
+.poke-controls input,
+#poke-query {
+    color: #000; /* texto negro para mayor lectura */
+    background-color: #fff; /* fondo blanco */
+    border: 2px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+    /* Placeholder más tenue pero legible */
+    .poke-controls input::placeholder,
+    #poke-query::placeholder {
+        color: #666;
+    }
